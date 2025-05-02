@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="765.0" prefWidth="506.0" spacing="20.0" style="-fx-background-color: darkRed; -fx-border-color: gold; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ies.puerto.controller.MangaController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Button mnemonicParsing="false" onAction="#addFavorite">
+      <graphic>
+         <ImageView fx:id="imagen" fitHeight="104.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/unliked.png" />
+            </image>
+         </ImageView>
+      </graphic>
+      <effect>
+         <DropShadow height="133.67" radius="55.2175" width="89.2">
+            <input>
+               <Lighting>
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant />
+                  </light>
+               </Lighting>
+            </input>
+            <color>
+               <Color red="0.9736841917037964" green="0.03606237843632698" blue="0.03606237843632698" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Button>
+    <Button fx:id="goBackBt" alignment="TOP_CENTER" onAction="#goBack" prefHeight="26.0" prefWidth="145.0" text="Go Back" textAlignment="CENTER" />
+   <ImageView fx:id="imageFill" fitHeight="278.0" fitWidth="295.0" pickOnBounds="true" preserveRatio="true" />
+   <Pane prefHeight="151.0" prefWidth="458.0">
+      <children>
+         <SplitPane dividerPositions="0.1450381679389313, 0.31297709923664124, 0.48091603053435117, 0.6564885496183206, 0.8320610687022901" layoutX="50.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="131.0" prefWidth="179.0" style="-fx-border-color: gold; -fx-border-width: 3;">
+            <items>
+               <Text fx:id="textCategoria" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria:" x="45.0" />
+               <Text fx:id="textCapitulos" strokeType="OUTSIDE" strokeWidth="0.0" text="Capitulos:" x="45.0" />
+               <Text fx:id="textDibujante" strokeType="OUTSIDE" strokeWidth="0.0" text="Dibujante:" x="45.0" />
+               <Text fx:id="textautor" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor:" x="45.0" />
+               <Text fx:id="textNombre" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" x="45.0" />
+               <Text fx:id="textGeneros" strokeType="OUTSIDE" strokeWidth="0.0" text="Generos:" x="45.0" />
+            </items>
+            <effect>
+               <Lighting diffuseConstant="1.33">
+                  <bumpInput>
+                     <Shadow height="187.05" radius="53.737500000000004" width="29.9">
+                        <color>
+                           <Color red="0.34210526943206787" green="0.014254385605454445" blue="0.014254385605454445" />
+                        </color>
+                     </Shadow>
+                  </bumpInput>
+                  <light>
+                     <Light.Distant>
+                        <color>
+                           <Color red="0.8947368264198303" green="0.8947368264198303" blue="0.8947368264198303" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </SplitPane>
+         <SplitPane dividerPositions="0.14728682170542637, 0.3178294573643411, 0.4883720930232558, 0.6589147286821705, 0.8294573643410853" layoutX="229.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="131.0" prefWidth="192.0" style="-fx-border-color: gold; -fx-border-width: 4;">
+           <items>
+               <Text fx:id="categoria" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria:" x="45.0" />
+               <Text fx:id="capitulos" strokeType="OUTSIDE" strokeWidth="0.0" text="Capitulos:" x="45.0" />
+               <Text fx:id="dibujante" strokeType="OUTSIDE" strokeWidth="0.0" text="Dibujante:" x="45.0" />
+               <Text fx:id="autor" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor:" x="45.0" />
+               <Text fx:id="nombre" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" x="45.0" />
+               <Text fx:id="generos" strokeType="OUTSIDE" strokeWidth="0.0" text="Generos:" x="45.0" />
+           </items>
+            <effect>
+               <Lighting diffuseConstant="1.33">
+                  <bumpInput>
+                     <Shadow height="187.05" radius="53.737500000000004" width="29.9">
+                        <color>
+                           <Color red="0.34210526943206787" green="0.014254385605454445" blue="0.014254385605454445" />
+                        </color>
+                     </Shadow>
+                  </bumpInput>
+                  <light>
+                     <Light.Distant>
+                        <color>
+                           <Color red="0.8947368264198303" green="0.8947368264198303" blue="0.8947368264198303" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </SplitPane>
+      </children>
+   </Pane>
+   <Hyperlink fx:id="link" onAction="#cambiar" text="Read!">
+      <effect>
+         <DropShadow height="198.67" radius="81.845" width="130.71">
+            <input>
+               <Lighting>
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant />
+                  </light>
+               </Lighting>
+            </input>
+            <color>
+               <Color red="0.013888888992369175" green="0.19467592239379883" blue="1.0" />
+            </color>
+         </DropShadow>
+      </effect></Hyperlink>
+   <Text fx:id="mensaje" strokeType="OUTSIDE" strokeWidth="0.0" />
+</VBox>

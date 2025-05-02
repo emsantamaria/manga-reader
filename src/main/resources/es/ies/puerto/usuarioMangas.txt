@@ -1,0 +1,6 @@
+[Seinen, Deportes, Drama],slam dunk,Concluida,278,Takehiko Inue,Takehiko Inue,https://esmanga.net/manga/slam-dunk,src/main/resources/images/slamDunk.jpg
+[Seinen, Accion Oscura, Accion],berserk,En publicacion,374,Kentaro Miura,Kentaro Miura,https://mangalector.com/manga/berserk,src/main/resources/images7berserk.jpg
+[Seinen, Accion, Accion Oscura],akira no yume,Detenida,22,DinoWaos,DinoWaos,https://medibang.com/mpc/authors/25017367/,src/main/resources/images/akiraNoYume.jpg
+[Shonen, Accion, Combates],dragon ball super,En publicacion,104,Akira Toriyama,Toyotaro,https://mangaplus.shueisha.co.jp/titles/200025,src/main/resources/images/dragonBall.jpeg
+[Seinen, Drama, Romance],oyasumi punpun,Concluida,147,Inio Asano,Inio Asano,https://mangalector.com/manga/oyasumi-punpun,src/main/resources/images/oyasumiPunpun.jpg
+[Accion, Seinen, Historica],vinland saga,En publicacion,217,Makoto Yukimura,Makoto Yukimura,https://leer-manga.com/manga/vinland-saga,src/main/resources/images/vinlandSaga.jpg

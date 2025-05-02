@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="605.0" spacing="20.0" style="-fx-background-color: darkred; -fx-border-color: gold; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ies.puerto.controller.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="694.0" prefWidth="607.0" style="-fx-border-color: gold;">
+      <children>
+         <ImageView fitHeight="357.0" fitWidth="548.0" layoutX="5.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/shonen-jump1.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="openRegistrarButton" layoutX="237.0" layoutY="77.0" mnemonicParsing="false" onAction="#openRegistrarClick" text="Registrarse">
+            <effect>
+               <Lighting light="$null" specularConstant="0.0">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+               </Lighting>
+            </effect></Button>
+          <Button alignment="TOP_CENTER" layoutX="201.0" layoutY="20.0" onAction="#recoverPassoword" prefHeight="26.0" prefWidth="163.0" text="Recover Password" textAlignment="CENTER">
+            <effect>
+               <Lighting>
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant />
+                  </light>
+               </Lighting>
+            </effect>
+         </Button>
+         <ComboBox fx:id="comboIdioma" layoutX="379.0" layoutY="21.0" onAction="#cambiarIdioma" prefWidth="150.0" promptText="Idioma" />
+         <Text fx:id="textUsuario" fill="WHITE" layoutX="278.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
+         <TextField fx:id="textFieldUsuario" layoutX="80.0" layoutY="141.0" maxHeight="-Infinity" prefHeight="24.0" prefWidth="434.0" />
+         <Text fx:id="textContrasenia" fill="WHITE" layoutX="273.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" wrappingWidth="108.19140625" />
+         <PasswordField fx:id="textFieldPassword" layoutX="77.0" layoutY="205.0" prefHeight="24.0" prefWidth="434.0" />
+          <Button fx:id="aceptarButton" alignment="TOP_CENTER" layoutX="216.0" layoutY="267.0" onAction="#onLoginButtonClick" prefHeight="26.0" prefWidth="163.0" text="Aceptar" textAlignment="CENTER">
+            <effect>
+               <DropShadow height="77.34" radius="44.1" width="101.06">
+                  <color>
+                     <Color red="1.0" green="0.032407406717538834" blue="0.09691358357667923" />
+                  </color>
+                  <input>
+                     <Lighting>
+                        <bumpInput>
+                           <Shadow />
+                        </bumpInput>
+                        <light>
+                           <Light.Distant />
+                        </light>
+                     </Lighting>
+                  </input>
+               </DropShadow>
+            </effect>
+         </Button>
+         <Text fx:id="textFieldMensaje" layoutX="298.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   " />
+         <Button fx:id="readMangaButton" layoutX="36.0" layoutY="21.0" mnemonicParsing="false" onAction="#searchManga" text="Read Manga">
+            <effect>
+               <DropShadow height="127.75" radius="67.08" width="142.57">
+                  <color>
+                     <Color red="1.0" green="0.009259259328246117" blue="0.009259259328246117" />
+                  </color>
+                  <input>
+                     <Lighting>
+                        <light>
+                           <Light.Distant />
+                        </light>
+                        <bumpInput>
+                           <Shadow />
+                        </bumpInput>
+                     </Lighting>
+                  </input>
+               </DropShadow>
+            </effect>
+         </Button>
+      </children>
+   </Pane>
+</VBox>

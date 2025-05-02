@@ -1,0 +1,4 @@
+[]/[Shonen, Seinen, Romance],ernesto,ernesto,ernesto
+[]/[Accion, Romance, Seinen],pedrito,pedrito,pedrito
+[[Shonen, Accion, Combates],dragon ball super,En publicacion,104,Akira Toriyama,Toyotaro,https://mangaplus.shueisha.co.jp/titles/200025,src/main/resources/images/dragonBall.jpeg]/[Horror, Accion, Romance, Shonen],goku,goku,goku
+[[Seinen, Accion Oscura, Accion],berserk,En publicacion,374,Kentaro Miura,Kentaro Miura,https://mangalector.com/manga/berserk,src/main/resources/images7berserk.jpg, [Seinen, Accion, Accion Oscura],claymore,Concluida,155,Norihiro Yagi,Norihiro Yagi,https://mangaplus.shueisha.co.jp/titles/200005,src/main/resources/images/claymore.jpg, [Seinen, Deportes, Drama],slam dunk,Concluida,278,Takehiko Inue,Takehiko Inue,https://esmanga.net/manga/slam-dunk,src/main/resources/images/slamDunk.jpg]/[Seinen, Romance, Accion],gg,gg,gg
