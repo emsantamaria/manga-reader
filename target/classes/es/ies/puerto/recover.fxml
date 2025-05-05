@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="498.0" prefWidth="434.0" spacing="20.0" style="-fx-background-color: darkred; -fx-border-color: gold; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ies.puerto.controller.RecoverPasswordController">
+   <children>
+      <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#goBacTokMain" style="-fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 6; -fx-background-radius: 6; -fx-border-width: 3;" text="Go Back">
+         <VBox.margin>
+            <Insets bottom="100.0" right="-180.0" />
+         </VBox.margin>
+         <effect>
+            <DropShadow height="124.77" radius="71.525" width="163.33">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fx:id="textUsuario" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduzca su email" />
+      <TextField fx:id="filedEmail" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="332.0" style="-fx-border-color: black; -fx-border-width: 3;" />
+      <Text fx:id="textMensaje" strokeType="OUTSIDE" strokeWidth="0.0" text="       " />
+      <Button fx:id="buttonRegistrar" mnemonicParsing="false" onAction="#recuperar" style="-fx-border-color: black; -fx-border-radius: 6; -fx-border-width: 2; -fx-background-radius: 6; -fx-background-color: gray;" text="Recuperar">
+         <effect>
+            <DropShadow height="124.77" radius="71.525" width="163.33">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+   </children>
+</VBox>

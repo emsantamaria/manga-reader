@@ -1,0 +1,18 @@
+[Shonen, Accion, Combates],dragon ball super,En publicacion,104,Akira Toriyama,Toyotaro,https://mangaplus.shueisha.co.jp/titles/200025,src/main/resources/images/dragonBall.jpeg
+[Shonen, Accion, Combates],naruto,Concluida,276,Masashi Kishimoto,Masashi Kishimoto,https://mangaplus.shueisha.co.jp/titles/200001,src/main/resources/images/naruto.jpeg
+[Shonen, Accion, Aventura],one piece,En publicacion,1142,Eichiro Oda,Eichiro Oda,https://mangaplus.shueisha.co.jp/titles/200016,src/main/resources/images/onePiece.jpeg
+[Seinen, Accion, Accion Oscura],claymore,Concluida,155,Norihiro Yagi,Norihiro Yagi,https://mangaplus.shueisha.co.jp/titles/200005,src/main/resources/images/claymore.jpg
+[Seinen, Accion, Accion Oscura],akira no yume,Detenida,22,DinoWaos,DinoWaos,https://medibang.com/mpc/authors/25017367/,src/main/resources/images/akiraNoYume.jpg
+[Shonen, Misterio, Horror],death note,Concluida,108,Tsugumi Obha,Takeshi Obata,https://mangaplus.shueisha.co.jp/titles/200009,src/main/resources/images/deathnote.jpeg
+[Shonen, Romance, Accion],dandadan,En publicacion,186,Yukinobu Tatsu,Yukinobu Tatsu,https://mangaplus.shueisha.co.jp/titles/100171,src/main/resources/images/dandadan.jpeg
+[Seinen, Accion Oscura, Accion],berserk,En publicacion,374,Kentaro Miura,Kentaro Miura,https://mangalector.com/manga/berserk,src/main/resources/images/berserk.jpg
+[Accion, Seinen, Historica],vinland saga,En publicacion,217,Makoto Yukimura,Makoto Yukimura,https://leer-manga.com/manga/vinland-saga,src/main/resources/images/vinlandSaga.jpg
+[Accion, Shonen, Peleas],bleach,Concluida,687,Kubo Tite,Kubo Tite,https://www.mangaread.org/manga/bleach/chapter-500-final-arc-the-thousand-year-blood-war/p/13/,src/main/resources/images/bleach.jpg
+[Shonen, Deportes, Comedia],kuroko no basket,Concluida,279,Tadatoshi Fujimaki,Tadatoshi Fujimaki,https://mangalector.com/manga/kuroko-no-basket/,src/main/resources/images/kurokoNoBasket.jpg
+[Seinen, Deportes, Drama],slam dunk,Concluida,278,Takehiko Inue,Takehiko Inue,https://esmanga.net/manga/slam-dunk,src/main/resources/images/slamDunk.jpg
+[Seinen, Drama, Romance],oyasumi punpun,Concluida,147,Inio Asano,Inio Asano,https://mangalector.com/manga/oyasumi-punpun,src/main/resources/images/oyasumiPunpun.jpg
+[Drama, Thriller, Accion],steins gate,Concluida,5,Yomi Sarachi,Yomi Sarachi,https://mangalector.com/manga/steinsgate-aishin-meizin-no-babel,src/main/resources/images/steinsGate.jpg
+[Seinen, Thriller, Drama],monster,Concluida,162,Naoki Urasawa,Naoki Urasawa,https://read-monster.com/,src/main/resources/images/monster.jpg
+[Seinen, Accion, Historica],vagabond,Detenida,328,Takehiko Inue,Takehiko Inue,http://vagabondmangafree.com/index.html,src/main/resources/images/vagabond.jpeg
+[Seinen, Horror, Drama],heroes,Concluida,1,Inio Asano,Inio Asano,https://xbato.com/title/65619-heroes-asano-inio/1104577-ch_0,src/main/resources/images/heroes.jpeg
+[Shonen, Accion, Horror]chainsaw man,199,Tatsuki Fujimoto,Tatsuki Fujimoto,https://mangaplus.shueisha.co.jp/titles/200098,src/main/resources/images/chainsawMan.jpeg

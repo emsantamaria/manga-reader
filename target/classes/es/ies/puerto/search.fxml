@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" blendMode="HARD_LIGHT" prefHeight="475.0" prefWidth="439.0" spacing="20.0" style="-fx-background-color: darkred; -fx-border-color: gold; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ies.puerto.controller.SearchController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Button fx:id="goBackButton" alignment="TOP_CENTER" onAction="#goBack" prefHeight="24.0" prefWidth="74.0" style="-fx-background-radius: 80; -fx-background-size: 80;" text="Go Back" textAlignment="CENTER" textFill="#6f0505" textOverrun="CLIP">
+      <effect>
+         <DropShadow height="86.24" radius="43.36" spread="0.65" width="89.2">
+            <color>
+               <Color red="0.8289473652839661" green="0.0767543837428093" blue="0.0767543837428093" />
+            </color>
+            <input>
+               <Lighting>
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant />
+                  </light>
+               </Lighting>
+            </input>
+         </DropShadow>
+      </effect></Button>
+
+    <Label fx:id="welcomeText" prefHeight="19.0" prefWidth="306.0" text="Escribe el nombre del manga a buscar:" textFill="WHITE">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <font>
+         <Font size="15.0" />
+      </font>
+      <effect>
+         <Lighting>
+            <bumpInput>
+               <Shadow>
+                  <color>
+                     <Color red="1.0" />
+                  </color>
+               </Shadow>
+            </bumpInput>
+            <light>
+               <Light.Distant />
+            </light>
+         </Lighting>
+      </effect></Label>
+   <TextField fx:id="nameTextFiled" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="332.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+   <Button mnemonicParsing="false" onAction="#openManga" style="-fx-background-color: darkgray; -fx-border-color: gold; -fx-border-width: 3;">
+      <graphic>
+         <ImageView fx:id="imageFill" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      </graphic></Button>
+
+   <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchMangas" text="Search" />
+   <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="      " />
+   
+</VBox>
