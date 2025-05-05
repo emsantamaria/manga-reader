@@ -130,6 +130,8 @@ public class InitReadController extends AbstractController {
      */
     public void postInitialize() {
         mensajeText.setText(mensajeText.getText() + " " + usuario.getNombre());
+        rellenarMangas(generosGustados);
+        rellenarMangas2(gustados);
         ponerGeneros(generosGustados);
         ponerMangas(gustados);
     }
@@ -169,8 +171,11 @@ public class InitReadController extends AbstractController {
                 Image image = new Image(url);
                 imageGenero.get(i).setImage(image);
             }
+            else{
+                imageGenero.get(i).setVisible(false);
+            }
         }
-        completarGenero(mangas);
+       
     }
 
     /**
@@ -183,8 +188,11 @@ public class InitReadController extends AbstractController {
                 Image image = new Image("file:" + mangas.get(i).getDireccionImagen());
                 imageManga.get(i).setImage(image);
             }
+            else{
+                imageGenero.get(i).setVisible(false);
+            }
         }
-        completarManga(mangas);
+       
     }
 
     /**
@@ -215,8 +223,12 @@ public class InitReadController extends AbstractController {
      * @param manga The manga to display.
      * @throws IOException if the screen cannot be loaded.
      */
-    protected void openManga1(ImageView imageView, Manga manga) throws IOException {
-        if (!imageView.isVisible()) {
+    @FXML
+    protected void abrirManga(ActionEvent event) throws IOException {
+        Button button=(Button)event.getSource();
+        Manga manga=new Manga();
+        manga=encontrar(button);
+        if (!button.isVisible()) {
             return;
         }
         recordar();
@@ -235,6 +247,60 @@ public class InitReadController extends AbstractController {
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+    
+    /**
+     * Opens the details screen for a selected manga.
+     * @param imageView The image view clicked.
+     * @param manga The manga to display.
+     * @throws IOException if the screen cannot be loaded.
+     */
+    @FXML
+    protected void abrirMangaa(ActionEvent event) throws IOException {
+        Button button=(Button)event.getSource();
+        Manga manga=new Manga();
+        manga=encontrar(button);
+        if (!button.isVisible()) {
+            return;
+        }
+        recordar();
+        if (manga == null) {
+            return;
+        }
+        try {
+            FXMLLoader loader = new FXMLLoader(PrincipalApplication.class.getResource("manga.fxml"));
+            Parent root = loader.load();
+            MangaController registroController = loader.getController();
+            registroController.setPropertiesIdioma(this.getPropertiesIdioma());
+            registroController.initialize(manga);
+            registroController.postInitialize();
+            Stage stage = (Stage) verPerfilButton.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Manga encontrar(Button button){
+        switch (button.getId()) {
+            case "button1":
+                return mangaGenero1;
+            case "button2":
+                return  mangaGenero2;    
+            case "button3":
+                return mangaGenero3;
+            case "button4":
+                return mangaGenero4;
+            case "mangasButton1":
+                return mangaManga1;
+            case "mangasButton2":
+                return mangaManga2;
+            case "mangasButton3":
+                return mangaManga3;
+            default:
+            return  mangaManga4;
         }
     }
 
@@ -279,6 +345,7 @@ public class InitReadController extends AbstractController {
                 imageGenero.get(i).setVisible(false);
             }
         }
+        rellenarMangas(usariosList);
         ponerGeneros(usariosList);
     }
 
@@ -308,6 +375,7 @@ public class InitReadController extends AbstractController {
                 imageManga.get(i).setVisible(false);
             }
         }
+        rellenarMangas2(usariosList);
         ponerMangas(usariosList);
     }
 
@@ -327,8 +395,9 @@ public class InitReadController extends AbstractController {
         if (pocision - 5 < 0) {
             menos = pocision;
         }
-        List<Manga> mangas = generosGustados.subList(pocision - menos, pocision);
-        ponerGeneros(mangas);
+        List<Manga> usariosList = generosGustados.subList(pocision - menos, pocision);
+        rellenarMangas2(usariosList);
+        ponerGeneros(usariosList);
     }
 
     /**
@@ -347,8 +416,67 @@ public class InitReadController extends AbstractController {
         if (pocision - 5 < 0) {
             menos = pocision;
         }
-        List<Manga> mangas = gustados.subList(pocision - menos, pocision);
-        ponerMangas(mangas);
+        List<Manga> usariosList = gustados.subList(pocision - menos, pocision+1);
+        rellenarMangas2(usariosList);
+        ponerMangas(usariosList);
+    }
+
+    public void rellenarMangas(List<Manga>mangas){
+        switch (mangas.size()) {
+            case 1:
+            mangaGenero1=mangas.get(0);
+            mangaGenero2=null;
+            mangaGenero3=null;
+            mangaGenero4=null;
+                break;
+            case 2:
+                mangaGenero1=mangas.get(0);
+                mangaGenero2=mangas.get(1);
+                mangaGenero3=null;
+                mangaGenero4=null;
+                break;
+            case 3:
+                mangaGenero1=mangas.get(0);
+                mangaGenero2=mangas.get(1);
+                mangaGenero3=mangas.get(2);
+                mangaGenero4=null;
+                break;
+            default:
+            mangaGenero1=mangas.get(0);
+            mangaGenero2=mangas.get(1);
+            mangaGenero3=mangas.get(2);
+            mangaGenero4=mangas.get(3);
+                break;
+        }
+    }
+
+    public void rellenarMangas2(List<Manga>mangas){
+        switch (mangas.size()) {
+            case 1:
+            mangaManga1=mangas.get(0);
+            mangaManga2=null;
+            mangaManga3=null;
+            mangaManga4=null;
+                break;
+            case 2:
+                mangaManga1=mangas.get(0);
+                mangaManga2=mangas.get(1);
+                mangaManga3=null;
+                mangaManga4=null;
+                break;
+            case 3:
+                mangaManga1=mangas.get(0);
+                mangaManga2=mangas.get(1);
+                mangaManga3=mangas.get(2);
+                mangaManga4=null;
+                break;
+            default:
+            mangaManga1=mangas.get(0);
+            mangaManga2=mangas.get(1);
+            mangaManga3=mangas.get(2);
+            mangaManga4=mangas.get(3);
+                break;
+        }
     }
 }
 
