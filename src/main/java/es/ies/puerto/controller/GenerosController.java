@@ -101,7 +101,7 @@ public class GenerosController extends AbstractController {
      * Sets up properties for the controller after initialization.
      */
     public void postInitialize() {
-        Properties properties = getPropertiesIdioma();
+         properties=readProperties();
         if (usuario != null) {
             continueButton.setText("Guardar");
         }
